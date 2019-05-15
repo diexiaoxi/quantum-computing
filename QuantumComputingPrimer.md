@@ -32,7 +32,9 @@
 ![](https://img-blog.csdn.net/20180420125901721?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xzdHRveQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 **【阿达马门(Hadamard Gate)】** 
-阿达马门是只对一个量子比特进行操作的门。 在量子计算中，该逻辑门可以实现对$|0\rangle$或者$|1\rangle$进行操作，然后成为叠加态。 
+阿达马门是只对一个量子比特进行操作的门。 在量子计算中，该逻辑门可以实现对$|0\rangle$或者$|1\rangle$进行操作，然后成为叠加态。
+其矩阵表示为：
+
 ![阿达马门](https://img-blog.csdn.net/20180419223507931?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xzdHRveQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 我们一般用$H(qubits[0])$或者$H(qubits[1])$来表示对量子位0或者1的状态进行执行阿达马门 H 操作，使其处于叠加状态。 
@@ -54,6 +56,37 @@
 ![量子计算机的基本操作提供一个能量规划程序(一系列的$h$和$J$数值)，这样计算机找到最优开关配置（+1和-1） ](https://img-blog.csdn.net/20170622085130472)
 
 建立一系列$h$和$J$值的一个能量规划程序，是非常困难和耗时的。但这可以通过量子编程来实现。
+
+2. 对双量子进行操作的逻辑门
+
+## 【受控非门CNOT(Control-NOT gate)】**
+
+第二个量子比特只有在第一个量子比特为$|1\rangle$的时候进行$NOT$操作，否则就保持不变。实际上，我们一般用这个逻辑门来对两个量子之间进行**纠缠处理**。而且因为是受控非门，因此我们可以控制受控量子对象的逻辑状态。
+
+**【受控互换门SWAP(Swap gate)】** 
+
+互换门操作两个量子比特，让两个量子比特相互交换量子位,即$SWAP(A,B)$。如果我们定义$A$的量子位为$|0\rangle$，$B$的量子位为$|1\rangle$，进过受控互换门操作后，则观测结果为$A$的量子位为$|1\rangle$，$B$的量子位为$|0\rangle$。
+
+3. 对三量子进行操作的逻辑门
+
+**【Toffoli门 CCNOT(Controlled-Controlled-NOT gate)】** 
+
+Toffoli门是一个操作三个量子比特的的量子逻辑门，其为一种通用可逆逻辑门。 
+主要表征为：$operation CCNOT (control1 : Qubit, control2 : Qubit, target : Qubit):()$ 
+其前两个量子比特是$|1\rangle$，则对第三个量子比特进行类似于经典的逻辑非门处理，反之则不做操作。前两个是操作子，后一个是观测子。 
+整体输入输出表达式可以观测为以下： 
+
+![] (https://img-blog.csdn.net/20180420124705463?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xzdHRveQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+**【Fredkin门三位受控互换门CSWAP】**
+在第一个量子比特是$|1\rangle$，且第二和第三个量子位不同时为$|1\rangle的时候，后两个量子位相互交换。
+整体输入输出表达式可以观测为以下： 
+
+![](https://img-blog.csdn.net/20180420131459196?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xzdHRveQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+
+
+
 
 ## 一个自我编程的计算机
 例如：输入一些训练好的数据，让计算机去学习分类。一开始系统选择一个随机的能量规划方式（仅仅是一串$h$和$J$的变量），并且持续输入更多的训练数据让其进行自我调整。不过，量子计算机的不同在于它是概率性的，这也意味着它可能会返回多个答案，即，是不确定性的。这在复杂系统中是非常有用的。
