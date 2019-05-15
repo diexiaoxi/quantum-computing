@@ -75,6 +75,7 @@ Toffoli门是一个操作三个量子比特的的量子逻辑门，其为一种�
 ![](https://img-blog.csdn.net/20180420124705463?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xzdHRveQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 **【Fredkin门三位受控互换门CSWAP】**
+
 在第一个量子比特是$|1\rangle$，且第二和第三个量子位不同时为$|1\rangle$的时候，后两个量子位相互交换。
 整体输入输出表达式可以观测为以下： 
 
