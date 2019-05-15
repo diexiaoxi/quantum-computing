@@ -51,7 +51,7 @@
 **【向位门(Hadamard Gate)】**
 
 对量子操作，改变旋转向位。通常能够进行操作在Bloch球面上将比特水平旋转$90$度的操作门，我们称之为$S$门。即旋转矢基$\theta$为90度。 
-此外还有$T$门，饶水平面上旋转$45$度。
+此外还有$T$门，绕水平面上旋转$45$度。
 
 2. 对双量子进行操作的逻辑门
 
@@ -68,21 +68,21 @@
 **【Toffoli门 CCNOT(Controlled-Controlled-NOT gate)】** 
 
 Toffoli门是一个操作三个量子比特的的量子逻辑门，其为一种通用可逆逻辑门。 
-主要表征为：$operation CCNOT (control1 : Qubit, control2 : Qubit, target : Qubit):()$ 
+主要表征为：$CCNOT (control1 : Qubit, control2 : Qubit, target : Qubit):()$ 
 其前两个量子比特是$|1\rangle$，则对第三个量子比特进行类似于经典的逻辑非门处理，反之则不做操作。前两个是操作子，后一个是观测子。 
 整体输入输出表达式可以观测为以下： 
 
-![] (https://img-blog.csdn.net/20180420124705463?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xzdHRveQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![](https://img-blog.csdn.net/20180420124705463?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xzdHRveQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 **【Fredkin门三位受控互换门CSWAP】**
-在第一个量子比特是$|1\rangle$，且第二和第三个量子位不同时为$|1\rangle的时候，后两个量子位相互交换。
+在第一个量子比特是$|1\rangle$，且第二和第三个量子位不同时为$|1\rangle$的时候，后两个量子位相互交换。
 整体输入输出表达式可以观测为以下： 
 
 ![](https://img-blog.csdn.net/20180420131459196?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xzdHRveQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 
 
-![量子计算机的基本操作提供一个能量规划程序(一系列的$h$和$J$数值)，这样计算机找到最优开关配置（+1和-1） ](https://img-blog.csdn.net/20170622085130472)
+![量子计算机的基本操作提供一个能量规划程序(一系列的$h$和$J$数值)，这样计算机找到最优开关配置（+1和-1）](https://img-blog.csdn.net/20170622085130472)
 
 建立一系列$h$和$J$值的一个能量规划程序，是非常困难和耗时的。但这可以通过量子编程来实现。
 
