@@ -90,11 +90,11 @@ Toffoli门是一个操作三个量子比特的的量子逻辑门，其为一种�
 
 ![](https://i0.hdslb.com/bfs/article/1e609361ff1caa2fa9fe6cad2b8d48075c049df6.png@476w_256h.webp)
 
-$$Ucn|X,0\rangle= |X,0\oplusX\rangle = |X,X\rangle$$,这是否意味着我们成功克隆了$|X\rangle$呢？
+$$Ucn|X,0\rangle= |X,0\oplus X\rangle = |X,X\rangle$$,这是否意味着我们成功克隆了$|X\rangle$呢？
 
-将$|X\rangle = a|0\rangle + b |1\rangle$代入:
+将$|X\rangle = a|0\rangle + b|1\rangle$代入:
 
- $$Ucn|X,0\rangle =Ucn(a|0\rangle+b |1\rangle)|0\rangle =  Ucn(a|00\rangle+b|10\rangle) = a|00\rangle+b|11\rangle
+ $$Ucn|X,0\rangle =Ucn(a|0\rangle+b |1\rangle)|0\rangle =  Ucn(a|00\rangle+b|10\rangle) = a|00\rangle+b|11\rangle$$
 
 而我们想要得到的输出为
 
