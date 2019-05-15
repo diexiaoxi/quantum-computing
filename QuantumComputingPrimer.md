@@ -14,12 +14,12 @@
 
 泡利-X 门操作一个量子比特，相当于经典的**逻辑非门**。如操作前量子位为 $|1\rangle$则进过泡利X门操作后会换成 $|0\rangle$。反之则由$|0\rangle$换成 $|1\rangle$。 
 其线代矩阵表示为： 
-
+$$
 \begin{bmatrix}
 0 & 1\\
-1 &  0
+1 &  0\\
 \end{bmatrix}
-
+$$
 
 **【泡利-Y 门(Pauli-Y gate)】**
 
@@ -27,7 +27,7 @@
 其线代矩阵表示为：
 $$\begin{bmatrix}
 0 & -i\\
-i &  0
+i &  0\\
 \end{bmatrix}$$
 
 **【泡利-Z 门(Pauli-Z gate)】**
@@ -35,9 +35,8 @@ i &  0
 泡利-Z 门操作单个量子比特。 这个门保留基本状态$|0\rangle$不变,将$|1\rangle$换成$-|1\rangle$。 
 其线代矩阵表示为:
 $$\begin{bmatrix}
-1 & 0
-\\
-0 & -1
+1 & 0\\
+0 & -1\\
 \end{bmatrix}$$
 
 **【阿达马门(Hadamard Gate)】** 
