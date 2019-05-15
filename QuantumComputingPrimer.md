@@ -11,15 +11,17 @@
 【泡利门系列】 
 
 **【泡利-X 门(Pauli-X gate)】** 
+
 泡利-X 门操作一个量子比特，相当于经典的**逻辑非门**。如操作前量子位为 $|1\rangle$则进过泡利X门操作后会换成 $|0\rangle$。反之则由$|0\rangle$换成 $|1\rangle$。 
 其线代矩阵表示为： 
-$$\begin{bmatrix}
-0 & 1 
-\\
+$$\left[
+\begin{bmatrix}
+0 & 1 \\
 1 &  0
-\end{bmatrix}$$
+\end{bmatrix}
+\right]$$
 
-**【泡利-Y 门(Pauli-Y gate)】 **
+**【泡利-Y 门(Pauli-Y gate)】**
 
 泡利-Y 门操作单一个量子比特。有点类似于复数操作。
 其线代矩阵表示为：
