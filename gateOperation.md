@@ -86,6 +86,27 @@ Toffoli门是一个操作三个量子比特的的量子逻辑门，其为一种�
 
 每次观测，量子就会按照$|\alpha_0|^2$、$|\alpha_1|^2$的概率坍塌至$|0\rangle$或$|1\rangle$。量子存在一个 No-Cloning Theorem，这就导致了我们不能简单地“反复观测”量子计算的结果，而需要反复计算+观测。
 
+## 量子克隆
+
+![](https://i0.hdslb.com/bfs/article/1e609361ff1caa2fa9fe6cad2b8d48075c049df6.png@476w_256h.webp)
+
+$$Ucn|X,0\rangle= |X,0\oplusX\rangle = |X,X\rangle$$,这是否意味着我们成功克隆了$|X\rangle$呢？
+
+将$|X\rangle = a|0\rangle + b |1\rangle$代入:
+
+ $$Ucn|X,0\rangle =Ucn(a|0\rangle+b |1\rangle)|0\rangle =  Ucn(a|00\rangle+b|10\rangle) = a|00\rangle+b|11\rangle
+
+而我们想要得到的输出为
+
+$$|X\rangle|X\rangle= (a |0\rangle+ b |1\rangle)(a|0\rangle+b|1\rangle) = a^2 |00\rangle+ab|01\rangle+ab|10\rangle+ b^2 |11\rangle $$
+
+两者如果相等，那么$ab=0$并且$a,b=0$或$1$。
+也就是说，如果想要克隆|X〉，那么要求需要克隆的qubit的所有可能态，属于一个集合${|\psi\rangle}$，这个集合中的态相互正交。我们无法做到对任意态的克隆。
+
+反过来想，假设我们可以克隆任意qubit，那么我们就可以将1个qubit拷贝无数份，从而可以将$|X\rangle= a |0\rangle+ b |1\rangle$中的概率$a,b$精确到小数点后任意位，这意味着我们通过1个qubit传输了无穷多位经典bit，这是违反物理直觉的。
+
+
+
 ## 量子计算机
 
 ![量子计算机的基本操作提供一个能量规划程序(一系列的$h$和$J$数值)，这样计算机找到最优开关配置（+1和-1）](https://img-blog.csdn.net/20170622085130472)
