@@ -82,7 +82,11 @@ Toffoli门是一个操作三个量子比特的的量子逻辑门，其为一种�
 
 ![](https://img-blog.csdn.net/20180420131459196?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xzdHRveQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
+## 量子观测
 
+每次观测，量子就会按照$|\alpha_0|^2$、$|\alpha_1|^2$的概率坍塌至$|0\rangle$或$|1\rangle$。量子存在一个 No-Cloning Theorem，这就导致了我们不能简单地“反复观测”量子计算的结果，而需要反复计算+观测。
+
+## 量子计算机
 
 ![量子计算机的基本操作提供一个能量规划程序(一系列的$h$和$J$数值)，这样计算机找到最优开关配置（+1和-1）](https://img-blog.csdn.net/20170622085130472)
 
